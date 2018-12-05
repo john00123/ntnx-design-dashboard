@@ -4,13 +4,13 @@ const projects = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
 const previousWeek = [
 
-  {name :'Projects in Concept ',
+  {name :'Feats. in Concept ',
   description: `The concept's primary objective is to gather the most pertinent information necessary to create a successful UX design.`,
   value: 100},
-  {name :'Project in Design ',
+  {name :'Feats. in Design ',
   description: `The Design phase is the production time in creating reviewing testing and finalizing designs.`,
   value: 100},
-  {name :'Projects in Dev Q/A',
+  {name :'Feats. in Dev Q/A',
   description: `Dev QA's phase foucisng in validating implementaion, tweak design before final production and testing operations.`,
   value: 100},
 
@@ -28,8 +28,8 @@ const card = (v) => `<div class='card' flex='c'>
 </div>
 
 <br><hr fw>
-<h3 style='margin-top:10px' fw>150 Last Week <p fw> 10 new projects & 2 reassigned </p><hr fw></h3>
-<h3 style='margin-top:-5px' fw>100 Projected Next Week <p fw> 10 new projects & 2 reassigned </p><hr fw></h3>
+<h3 style='margin-top:10px' fw>150 Last Week <p fw> 10 new Feats. & 2 reassigned </p><hr fw></h3>
+<h3 style='margin-top:-5px' fw>100 Projected Next Week <p fw> 10 new Feats. & 2 reassigned </p><hr fw></h3>
 <p>${v.description}</p></div>`
 
 const cardGraph = (v) => `<div class='card' flex='c'>
@@ -45,7 +45,7 @@ const cardGraph = (v) => `<div class='card' flex='c'>
   <p fw> <span class='w0 sm'>−</span> less than a week </p><hr fw>
   <p fw> <span class='w2 sm'>=</span> between 2-4 weeks </p><hr fw>
   <p fw> <span class='w4 sm'>+</span> more than 4 weeks</p> <hr fw></h3>
-  <h3 style='margin-top:0px' fw><p fw>This evaluates how long does projects in this stage take before they move to the next stage.</p></h3>
+  <h3 style='margin-top:0px' fw><p fw>This graph depicts how long each FEAT has been in its current phase.</p></h3>
 </div>`
 
 previousWeek.map(value => container.append(card(value)));
@@ -124,7 +124,7 @@ $('.highlights').append(
     <h3 class='hgl' style='margin-top:10px' fw>200 Patents filed <p fw> Including 100 utility and 50 design patents</p><hr fw></h3>
     <h3  class='hgl' style='margin-top:-5px' fw>Tested Licensing flows<p fw> Feedbackfrom customers about licenses retrieved</p><hr fw></h3>
     <h3  class='ngl' style='margin-top:-5px' fw>Pulse<p>Pulse data on product</p><hr fw></h3>
-    <h3  class='ngl' style='margin-top:-5px; margin-bottom:0' fw>100 Projects closed <p fw> Organizing buggaton to close P0 bugs in product </p></h3>
+    <h3  class='ngl' style='margin-top:-5px; margin-bottom:0' fw>100 Feats. closed <p fw> Organizing buggaton to close P0 bugs in product </p></h3>
     </div>`
 )
 
