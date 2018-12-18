@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@import url("https://rsms.me/inter/inter-ui.css");
+* {
+  font-family: 'Inter UI', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter UI var alt', sans-serif;
+  }
+}
+
 [fw] {
   width: 100%;
 }
@@ -15,10 +26,6 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-}
-
-* {
-  font-family: 'Noto Sans SC', sans-serif;
 }
 
 html {
@@ -51,10 +58,9 @@ hr {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.075em;
 }
 
 h2 {
