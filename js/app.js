@@ -29,7 +29,7 @@
     });
 
 
-    dbRefList.on('child_change', snap => {
+    dbRefList.on('child_changed', snap => {
       $(`#${snap.key}`).text(snap.val());
     });
 
