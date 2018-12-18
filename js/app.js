@@ -2,7 +2,7 @@
 (function(){
   // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyCX2mp5rLjF0nroDjIo4GtjnDr6CpLkqJ0",
+      // "AIzaSyCX2mp5rLjF0nro",
       authDomain: "ntnx-dteam.firebaseapp.com",
       databaseURL: "https://ntnx-dteam.firebaseio.com",
       projectId: "ntnx-dteam",
