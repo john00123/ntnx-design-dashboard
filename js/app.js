@@ -9,7 +9,6 @@
       storageBucket: "ntnx-dteam.appspot.com",
       messagingSenderId: "220244852409"
     };
-
     firebase.initializeApp(config);
 
     const preObject = $('#object');
@@ -19,6 +18,8 @@
 
     //SYNC object changes
 
-    dbRefObject.on('value', snap => console.log(snap.val()));
+    dbRefObject.on('value', snap => {
+      preObject.append(JSON.stringify(snap.val()), null, 3);
+    });
 
 }());
