@@ -37,6 +37,10 @@ html {
   background-color: #F2F4F6;
 }
 
+pre {
+  line-height: 1.3;
+}
+
 body {
   height: 100%;
   width: 100%;
