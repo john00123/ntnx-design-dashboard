@@ -7,11 +7,11 @@
     storageBucket: "ntnx-dteam.appspot.com",
     messagingSenderId: "220244852409"
   };
-  
+
   firebase.initializeApp(config);
 
   const preObject = $('#object');
-  const dbRefObject = firebase.database.ref().child('object')
+  const dbRefObject = firebase.database().ref().child('object')
 
   //SYNC object changes
 
